@@ -1,4 +1,4 @@
 from app import compare 
 
 def test_compare():
-    assert compare(10, 10) == "10 is equal to 10"
+    assert compare(5, 6) == "5 is smaller than 6"
