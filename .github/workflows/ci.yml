@@ -24,7 +24,7 @@ jobs:
         run: pytest
 
       - name: Docker image құру
-        run: docker build -t student-app .
+        run: docker build -t student-app -f df.dockerfile .
 
       - name: Контейнерді іске қосу
         run: docker run --rm student-app
