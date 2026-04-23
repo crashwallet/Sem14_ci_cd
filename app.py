@@ -1,11 +1,12 @@
-def compare(a: int, b: int) -> bool:
-    if a > b:
-        return f"{a} is bigger than {b}"
-    elif a < b:
-        return f"{a} is smaller than {b}"
-    else:
-        return f"{a} is equal to {b}"
+def list_ops(a: list) -> int:
+    evens, odds = 0, 1
+    for x in a:
+        if x % 2 == 1:
+            odds *= x
+        else:
+            evens += x 
+    return odds - evens
 
 if __name__ == "__main__":
-    print("Result:", compare(10, 9))
+    print("Result:", list_ops([1,2,3,4,5,6,7,8,9,10]))
     
